@@ -1,0 +1,43 @@
+Question #1
+
+Turn a string into a URL. (No spaces) all spaces are returned with “%20”.
+Write and algorithm. May not use a replace() method or regular expressions. 
+Solve with and without recurrsion.
+
+Input: “Jasmine Ann Jones”
+Output: “Jasmine%20Ann%20Jones
+
+
+//Recursive:
+
+const urlCreator = (string) => {
+	const lowerCaseString = string.toLowerCase();
+	type 
+	if (lowerCaseString === “”) {
+	} return “”;
+	} else if (lowerCaseString[lowerCaseString.length - 1] === (“ “)) {
+		return url(lowerCaseString.substring(0,(lowerCaseString.length - 1))
+		+ (“ %20”) 	
+	} else  {
+		return url(lowerCaseString.substring(0,(lowerCaseString.length - 1)) 
+		+ lowerCaseString[lowerCaseString.length - 1]	
+	}
+}
+
+urlCreator(“Jasmine Ann Jones”)
+
+
+
+//Non-recursive
+
+Const string = “Jasmine Ann Jones”
+Const arrayString = string.split(“”);
+
+Const finalArrayString.join(“”) = arrayString.map (e => e {
+	if (e === “ “) {
+		return “%20”;
+	} else {
+		return e;
+}
+
+Const finalString = finalArrayString.join(“”)
